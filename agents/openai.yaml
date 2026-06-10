@@ -1,0 +1,6 @@
+interface:
+  display_name: "数学教练"
+  short_description: "数学题讲解、验算与带图学习卡片"
+  default_prompt: "Use $math-learning-coach to solve this math problem with thinking steps, verified diagrams, and student-friendly explanations."
+policy:
+  allow_implicit_invocation: true
