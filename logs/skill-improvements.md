@@ -79,3 +79,21 @@
   - `logs\skill-improvements.md`
 - 同步状态：不涉及正式技能规则变更，无需发布到正式技能目录。
 - 后续观察：如果后续使用方式变化，应优先更新这份说明。
+
+## 2026-06-10 21:30
+
+- 来源会话：数技项目维护讨论
+- 来源题型：技能插件化
+- 用户反馈：希望把数学学习讲解技能改成 Codex 插件，方便在插件/技能列表里管理和后续使用。
+- 当场处理：创建 `math-learning-coach` 个人插件源码，并生成插件发布脚本。
+- 长期规则：后续长期技能改进优先同步插件版路径，再按需要同步旧独立技能镜像。
+- 修改文件：
+  - `plugin-source\math-learning-coach\.codex-plugin\plugin.json`
+  - `plugin-source\math-learning-coach\skills\math-learning-coach\SKILL.md`
+  - `plugin-source\math-learning-coach\skills\math-learning-coach\agents\openai.yaml`
+  - `skill-source\math-learning-coach\SKILL.md`
+  - `scripts\publish-plugin.ps1`
+  - `CHANGELOG.md`
+  - `logs\skill-improvements.md`
+- 同步状态：已发布到 `C:\Users\xiao\plugins\math-learning-coach`，已通过插件校验，并已通过 `codex plugin add math-learning-coach@personal` 安装到 Codex 插件缓存。
+- 后续观察：需要新开会话或刷新 Codex 插件页，检查插件是否出现在 Codex 插件/技能列表。
