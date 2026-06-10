@@ -1,4 +1,4 @@
----
+﻿---
 name: math-learning-coach
 description: Solve and explain math-learning tasks with student-friendly reasoning, syllabus constraints, multiple methods, verified geometry diagrams, and step-by-step infographic artifacts. Use when the user asks to solve a math problem, explain thinking methods, restrict to school-level knowledge such as 初中人教版, create math study notes, make every-step diagrams, or turn prior math discussion into a reusable teaching workflow.
 ---
@@ -17,6 +17,35 @@ Work as a math-learning coach, not only an answer generator. Prefer Chinese unle
 4. Explain the thinking method before the algebra: what invariant to look for, why to introduce an unknown, which relation will produce an equation, and how to finish the target ratio or value.
 5. Solve in small steps. Tie each formula back to a visible geometric object or a named condition.
 6. Verify the result against the original conditions before finalizing.
+
+## Live Skill Improvement Workflow
+
+When the user gives feedback during a math-teaching session, distinguish between current-task correction and long-term skill improvement.
+
+If the feedback only asks to improve the current explanation, diagram, wording, or web handout, apply it immediately to the current task and continue teaching.
+
+If the user clearly says the feedback should become a future default, such as `以后都这样`, `这个要改进技能`, `记到数学技能里`, `同步到数技项目`, or similar wording, do all of the following:
+
+1. Apply the improvement immediately to the current math explanation or handout, so the student's learning flow is not interrupted.
+2. Update the installed skill files when file tools and permissions are available:
+   - `C:\Users\xiao\.codex\skills\math-learning-coach\SKILL.md`
+   - `C:\Users\xiao\.codex\skills\math-learning-coach\agents\openai.yaml` only if interface metadata needs to change.
+3. Sync the same change back to the maintenance project when file tools and permissions are available:
+   - `E:\CodeX项\数技\skill-source\math-learning-coach\SKILL.md`
+   - relevant files under `E:\CodeX项\数技\docs`
+   - relevant files under `E:\CodeX项\数技\examples`
+   - `E:\CodeX项\数技\CHANGELOG.md`
+   - `E:\CodeX项\数技\logs\skill-improvements.md`
+4. Record every long-term skill improvement in `E:\CodeX项\数技\logs\skill-improvements.md` with the date, source task type, user feedback, immediate handling, long-term rule, changed files, sync status, and follow-up observation.
+5. If the current session cannot write to either location because of sandbox or permission limits, first continue the current explanation with the new rule, then tell the user exactly which sync step could not be completed and what approval or project context is needed.
+6. Keep long-term skill edits general and reusable. Do not write one-off problem details, temporary wording preferences, or unverified conclusions into the skill.
+
+For every long-term improvement, include a brief final note listing:
+
+- What changed for the current explanation.
+- Which skill or project files were updated.
+- Whether the installed skill and `E:\CodeX项\数技` project are now synchronized.
+- Which improvement-log entry was added.
 
 ## Curriculum Language Rules
 
