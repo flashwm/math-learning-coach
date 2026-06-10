@@ -97,3 +97,30 @@
   - `logs\skill-improvements.md`
 - 同步状态：已发布到 `C:\Users\xiao\plugins\math-learning-coach`，已通过插件校验，并已通过 `codex plugin add math-learning-coach@personal` 安装到 Codex 插件缓存。
 - 后续观察：需要新开会话或刷新 Codex 插件页，检查插件是否出现在 Codex 插件/技能列表。
+
+## 2026-06-10 - GeoGebra-style geometric marker precision
+
+- Source task type: junior-high geometry problem displayed as an HTML/SVG handout.
+- User feedback: angle arcs were not placed at the true angle vertices/rays; diagrams should follow GeoGebra-like standards.
+- Immediate handling: corrected the current HTML diagram so the 120 degree and 30 degree arcs are generated from the actual triangle vertices and rays.
+- Long-term rule: angle arcs, right-angle squares, tick marks, and perpendicular/parallel/length markers must be computed from the same coordinate geometry as the points and lines, with numerical verification before delivery.
+- Changed files: installed plugin skill, maintenance plugin skill, legacy standalone skill mirror, changelog, and this improvement log.
+- Sync status: installed plugin source and E:\CodeX项\数技 mirrors synchronized; cachebuster/reinstall attempted in the same maintenance pass.
+- Follow-up observation: future diagram work should include marker-specific verification, not only point/line coordinate verification.
+
+## 2026-06-10 22:20
+
+- 来源会话：数技项目维护讨论
+- 来源题型：插件性能与入口整理
+- 用户反馈：插件化后日常讲题明显比旧技能慢，希望按提速计划处理。
+- 当场处理：将 `SKILL.md` 改为快速默认模式、按需图文讲义模式、按需技能改进模式三层；清理旧独立技能入口和 `skill-source` 旧镜像维护线。
+- 长期规则：普通讲题不触发网页讲义、SVG、同步、日志等重规则；只有用户明确要求图文讲义或长期改进时才启用对应规则。
+- 修改文件：
+  - `plugin-source\math-learning-coach\skills\math-learning-coach\SKILL.md`
+  - `README.md`
+  - `docs\技能改进同步流程.md`
+  - `使用与维护说明.md`
+  - `CHANGELOG.md`
+  - `logs\skill-improvements.md`
+- 同步状态：已删除项目 `skill-source` 旧镜像和 `C:\Users\xiao\.codex\skills\math-learning-coach` 旧独立技能目录；已发布并刷新插件到 `math-learning-coach@personal` 版本 `0.1.0+codex.20260610142024`。
+- 后续观察：新开会话测试普通讲题是否不再触发重规则。

@@ -11,3 +11,6 @@
 - 新增 `plugin-source\math-learning-coach`，将数学学习讲解技能升级为个人 Codex 插件源码。
 - 新增 `scripts\publish-plugin.ps1`，用于把插件源码发布到 `C:\Users\xiao\plugins\math-learning-coach`。
 - 已通过个人 marketplace 安装插件：`codex plugin add math-learning-coach@personal`。
+- 提速整理：将主技能规则改为“快速默认 + 按需图文讲义 + 按需技能改进”三层，并停用旧独立技能入口。
+
+- 2026-06-10: Strengthened GeoGebra-style diagram rules so angle arcs, right-angle markers, tick marks, and geometric annotations must be computed from actual geometry rather than placed by eye.
